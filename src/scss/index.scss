@@ -1,0 +1,317 @@
+@import './_elevation.scss';
+@import './_colors.scss';
+@import './fulll-colors';
+@import './_mixin.scss';
+@import './_theme.scss';
+@import './variables';
+@import './_alignment';
+@import './_text';
+@import './_flex';
+@import './ripple';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700,900');
+
+:root {
+  --surface: white;
+  --background-application: #fafafa;
+  --button-default: #bbb;
+  --button-disabled: #ddd;
+  --snackbar-light: #ffffff;
+  --snackbar-main: #333333;
+  --snackbar-dark: #38a3e0;
+  --snackbar-text: white;
+  --primary-light: #c4d600;
+  --primary-main: #86bb24;
+  --primary-dark: #036a37;
+  --primary-text: white;
+  --secondary-light: #61b4e4;
+  --secondary-main: #00a3e0;
+  --secondary-dark: #0076a7;
+  --secondary-text: white;
+  --error-light: #ff7961;
+  --error-main: #f44336;
+  --error-dark: #ba000d;
+  --error-text: white;
+  --warning-light: #ffc947;
+  --warning-main: #f39100;
+  --warning-dark: #c66900;
+  --warning-text: white;
+  --info-light: #62efff;
+  --info-main: #00bcd4;
+  --info-dark: #008ba3;
+  --info-text: white;
+  --success-light: #b9ee5a;
+  --success-main: #86bb24;
+  --success-dark: #548b00;
+  --success-text: white;
+  --text: rgba(0, 0, 0, 0.87);
+  --text-default: rgba(0, 0, 0, 0.87);
+  --text-primary: rgba(0, 0, 0, 0.87);
+  --text-secondary: rgba(0, 0, 0, 0.54);
+  --text-disabled: rgba(0, 0, 0, 0.38);
+  --divider: rgba(0, 0, 0, 0.12);
+  --font-family: #{$font-family};
+  --font-size: #{$default-font-size};
+  --font-weight-thin: #{$font-weight-thin};
+  --font-weight-light: #{$font-weight-light};
+  --font-weight-regular: #{$font-weight-regular};
+  --font-weight-medium: #{$font-weight-medium};
+  --font-weight-bold: #{$font-weight-bold};
+  --font-weight-dark: #{$font-weight-dark};
+}
+
+/* Reboot */
+html,
+body {
+  margin: 0;
+  font-family: variable(font-family);
+  font-size: variable(font-size);
+}
+
+.button--default {
+  @include backgroundColor(variable(button-default));
+}
+.button--disabled {
+  @include backgroundColor(variable(button-disabled));
+}
+.snackbar {
+  @include backgroundColor(variable(snackbar-main));
+}
+.snackbar--light {
+  @include backgroundColor(variable(snackbar-light));
+}
+.snackbar--dark {
+  @include backgroundColor(variable(snackbar-dark));
+}
+.surface {
+  @include backgroundColor(variable(surface));
+}
+.background {
+  @include backgroundColor(variable(background-application));
+}
+.primary {
+  @include backgroundColor(variable(primary-main));
+}
+.primary--light {
+  @include backgroundColor(variable(primary-light));
+}
+.primary--dark {
+  @include backgroundColor(variable(primary-dark));
+}
+.secondary {
+  @include backgroundColor(variable(secondary-main));
+}
+.secondary--light {
+  @include backgroundColor(variable(secondary-light));
+}
+.secondary--dark {
+  @include backgroundColor(variable(secondary-dark));
+}
+.success {
+  @include backgroundColor(variable(success-main));
+}
+.success--light {
+  @include backgroundColor(variable(success-light));
+}
+.success--dark {
+  @include backgroundColor(variable(success-dark));
+}
+.warning {
+  @include backgroundColor(variable(warning-main));
+}
+.warning--light {
+  @include backgroundColor(variable(warning-light));
+}
+.warning--dark {
+  @include backgroundColor(variable(warning-dark));
+}
+.info {
+  @include backgroundColor(variable(info-main));
+}
+.info--light {
+  @include backgroundColor(variable(info-light));
+}
+.info--dark {
+  @include backgroundColor(variable(info-dark));
+}
+.error {
+  @include backgroundColor(variable(error-main));
+}
+.error--light {
+  @include backgroundColor(variable(error-light));
+}
+.error--dark {
+  @include backgroundColor(variable(error-dark));
+}
+.h1,
+h1 {
+  @include format-title('h1');
+}
+.h2,
+h2 {
+  @include format-title('h2');
+}
+.h3,
+h3 {
+  @include format-title('h3');
+}
+.h4,
+h4 {
+  @include format-title('h4');
+}
+.h5,
+h5 {
+  @include format-title('h5');
+}
+.h6,
+h6 {
+  @include format-title('h6');
+}
+.subtitle1 {
+  @include mat-typo('subtitle1');
+}
+.subtitle2 {
+  @include mat-typo('subtitle2');
+}
+.body1 {
+  @include mat-typo('body1');
+}
+.body2 {
+  @include mat-typo('body2');
+}
+.button {
+  @include mat-typo('button');
+  text-transform: uppercase;
+}
+.caption {
+  @include mat-typo('caption');
+}
+.overline {
+  @include mat-typo('overline');
+  text-transform: uppercase;
+}
+.font-thin {
+  font-weight: variable(font-weight-thin);
+}
+.font-light {
+  font-weight: variable(font-weight-light);
+}
+.font-regular {
+  font-weight: variable(font-weight-regular);
+}
+.font-medium {
+  font-weight: variable(font-weight-medium);
+}
+.font-bold {
+  font-weight: variable(font-weight-bold);
+}
+.font-dark {
+  font-weight: variable(font-weight-dark);
+}
+.primary {
+  @include backgroundColor(variable(primary-main));
+}
+.primary-light {
+  @include backgroundColor(variable(primary-light));
+}
+.primary-dark {
+  @include backgroundColor(variable(primary-dark));
+}
+.secondary {
+  @include backgroundColor(variable(secondary-main));
+}
+.secondary-light {
+  @include backgroundColor(variable(secondary-light));
+}
+.secondary-dark {
+  @include backgroundColor(variable(secondary-dark));
+}
+.success {
+  @include backgroundColor(variable(success-main));
+}
+.success-light {
+  @include backgroundColor(variable(success-light));
+}
+.success-dark {
+  @include backgroundColor(variable(success-dark));
+}
+.warning {
+  @include backgroundColor(variable(warning-main));
+}
+.warning-light {
+  @include backgroundColor(variable(warning-light));
+}
+.warning-dark {
+  @include backgroundColor(variable(warning-dark));
+}
+.info {
+  @include backgroundColor(variable(info-main));
+}
+.info-light {
+  @include backgroundColor(variable(info-light));
+}
+.info-dark {
+  @include backgroundColor(variable(info-dark));
+}
+.error {
+  @include backgroundColor(variable(error-main));
+}
+.error-light {
+  @include backgroundColor(variable(error-light));
+}
+.error-dark {
+  @include backgroundColor(variable(error-dark));
+}
+.text--primary {
+  @include foregroundColor(variable(primary-main));
+}
+.text--primary-light {
+  @include foregroundColor(variable(primary-light));
+}
+.text--primary-dark {
+  @include foregroundColor(variable(primary-dark));
+}
+.text--secondary {
+  @include foregroundColor(variable(secondary-main));
+}
+.text--secondary-light {
+  @include foregroundColor(variable(secondary-light));
+}
+.text--secondary-dark {
+  @include foregroundColor(variable(secondary-dark));
+}
+.text--success {
+  @include foregroundColor(variable(success-main));
+}
+.text--success-light {
+  @include foregroundColor(variable(success-light));
+}
+.text--success-dark {
+  @include foregroundColor(variable(success-dark));
+}
+.text--warning {
+  @include foregroundColor(variable(warning-main));
+}
+.text--warning-light {
+  @include foregroundColor(variable(warning-light));
+}
+.text--warning-dark {
+  @include foregroundColor(variable(warning-dark));
+}
+.text--info {
+  @include foregroundColor(variable(info-main));
+}
+.text--info-light {
+  @include foregroundColor(variable(info-light));
+}
+.text--info-dark {
+  @include foregroundColor(variable(info-dark));
+}
+.text--error {
+  @include foregroundColor(variable(error-main));
+}
+.text--error-light {
+  @include foregroundColor(variable(error-light));
+}
+.text--error-dark {
+  @include foregroundColor(variable(error-dark));
+}

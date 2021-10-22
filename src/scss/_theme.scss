@@ -1,0 +1,36 @@
+$theme: (
+  common: (
+    black: var(--black),
+    white: var(--white),
+  ),
+  button: (
+    default: var(--button-default),
+  ),
+  type: 'light',
+  primary: (
+    light: var(--primary-light),
+    main: var(--primary-main),
+    dark: var(--primary-dark),
+    constrastText: var(--primary-constrastText),
+  ),
+  secondary: (
+    light: var(--secondary-light),
+    main: var(--secondary-main),
+    dark: var(--secondary-dark),
+    constrastText: var(--secondary-constrastText),
+  ),
+  text: (
+    primary: var(--text-primary),
+    secondary: var(--text-secondary),
+    disabled: var(--text-disabled),
+  ),
+  divider: var(--divider),
+  typography: (
+    fontFamily: var(--fontFamily),
+    fontSize: var(--fontSize),
+    fontWeightLight: var(--fontWeightLight),
+    fontWeightRegular: var(--fontWeightRegular),
+    fontWeightMedium: var(--fontWeightMedium),
+    fontWeightBold: var(--fontWeightBold),
+  ),
+);

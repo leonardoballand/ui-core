@@ -1,0 +1,155 @@
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex--align-normal {
+  align-items: normal;
+}
+.flex--align-stretch {
+  align-items: stretch;
+}
+.flex--align-center {
+  align-items: center;
+}
+.flex--align-start {
+  align-items: start;
+}
+.flex--align-end {
+  align-items: end;
+}
+.flex--align-flex-start {
+  align-items: flex-start;
+}
+.flex--align-flex-end {
+  align-items: flex-end;
+}
+.flex--align-self-start {
+  align-items: self-start;
+}
+.flex--align-self-end {
+  align-items: self-end;
+}
+.flex--align-first {
+  align-items: first;
+}
+.flex--align-first baseline {
+  align-items: first baseline;
+}
+.flex--align-last baseline {
+  align-items: last baseline;
+}
+.flex--align-safe center {
+  align-items: safe center;
+}
+.flex--align-unsafe center {
+  align-items: unsafe center;
+}
+.flex--align-inherit {
+  align-items: inherit;
+}
+.flex--align-initial {
+  align-items: initial;
+}
+.flex--align-unset {
+  align-items: unset;
+}
+.flex--justify-center {
+  justify-content: center;
+}
+.flex--justify-start {
+  justify-content: start;
+}
+.flex--justify-end {
+  justify-content: end;
+}
+.flex--justify-flex-start {
+  justify-content: flex-start;
+}
+.flex--justify-flex-end {
+  justify-content: flex-end;
+}
+.flex--justify-left {
+  justify-content: left;
+}
+.flex--justify-right {
+  justify-content: right;
+}
+.flex--justify-normal {
+  justify-content: normal;
+}
+.flex--justify-space-between {
+  justify-content: space-between;
+}
+.flex--justify-space-around {
+  justify-content: space-around;
+}
+.flex--justify-space-evenly {
+  justify-content: space-evenly;
+}
+.flex--justify-stretch {
+  justify-content: stretch;
+}
+.flex--justify-safe center {
+  justify-content: safe center;
+}
+.flex--justify-unsafe center {
+  justify-content: unsafe center;
+}
+.flex--justify-inherit {
+  justify-content: inherit;
+}
+.flex--justify-initial {
+  justify-content: initial;
+}
+.flex--justify-unset {
+  justify-content: unset;
+}
+
+.flex--nowrap {
+  flex-wrap: nowrap;
+}
+.flex--wrap {
+  flex-wrap: wrap;
+}
+.flex--wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.flex--wrap-inherit {
+  flex-wrap: inherit;
+}
+.flex--wrap-initial {
+  flex-wrap: initial;
+}
+.flex--wrap-unset {
+  flex-wrap: unset;
+}
+
+.flex--row {
+  flex-direction: row;
+}
+.flex--row-reverse {
+  flex-direction: row-reverse;
+}
+.flex--column {
+  flex-direction: column;
+}
+.flex--column-reverse {
+  flex-direction: column-reverse;
+}
+.flex--direction-inherit {
+  flex-direction: inherit;
+}
+.flex--direction-initial {
+  flex-direction: initial;
+}
+.flex--direction-unset {
+  flex-direction: unset;
+}
